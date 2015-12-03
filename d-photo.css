@@ -64,17 +64,20 @@ header .nav-top a{
   letter-spacing:.8px;
   transition: all .2s ease-in-out;
   transition-delay:0s;
-  border-bottom:8px solid rgb(242,242,242);
+  border-bottom:8px solid rgb(255,255,255);
    box-sizing:initial;
    height:20px;
 }
 
 header #nav-d-photo{
    
-   /*border-bottom:8px solid #bbb;
+   /**/
+   border-bottom:8px solid #bbb;
    box-sizing:initial;
-   height:20px;*/
-  
+   height:20px;
+   background-color: #eee;
+   color:black;
+   font-weight: 700; 
 }
 
 header a:hover{

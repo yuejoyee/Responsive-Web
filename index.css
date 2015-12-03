@@ -28,7 +28,7 @@ header .logo{
   font-size:2.5rem;
   padding-top:30px;
   padding-bottom:30px;
-  border:0px solid red;
+  border:0px solid ;
   text-align:center;
   margin:0 auto;
 }
@@ -63,18 +63,23 @@ header .nav-top a{
   letter-spacing:.8px;
   transition: all .2s ease-in-out;
   transition-delay:0s;
-  border-bottom:8px solid rgb(242,242,242);
+  border-bottom:8px solid rgb(255,255,255);
    box-sizing:initial;
    height:20px;
 }
 
 header #nav-home{
+
    
+   /**/
    border-bottom:8px solid #bbb;
    box-sizing:initial;
    height:20px;
-  
+   background-color: #eee;
+   color:black;
+   font-weight: 700; 
 }
+
 
 header a:hover{
   display:block;
