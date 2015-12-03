@@ -1,0 +1,260 @@
+
+html, body, h1, h2, h3, p, ul, li {
+  margin:0;
+  padding:0;
+}
+
+*{ font-family:roboto, sans-serif; 
+   box-sizing:border-box;
+   
+
+}
+
+html{font-size:10px; }
+header .logo{font-size:2.4rem;}
+header .nav-top{font-size:1.8rem}
+
+
+.top1{
+  width:320px;
+  
+  margin:0 auto; 
+  padding:0 0;
+  letter-spacing:0px;
+}
+
+
+header .logo{
+  font-family:roboto slab;
+  font-size:2.5rem;
+  padding-top:30px;
+  padding-bottom:30px;
+  border:0px solid red;
+  text-align:center;
+  margin:0 auto;
+}
+
+header .top1 a{
+  color:#111;
+  text-decoration:none;  
+}
+
+
+header .nav-bar{
+  border:0px solid red;
+}
+
+header .nav-top{
+ background:#333;
+  min-height: 80px; 
+  display:block;
+}
+
+header .nav-top a{
+  border:0px solid red;
+ 
+  color:#222;
+  text-align: center;
+  display: block;
+  text-decoration:none;
+  color: #fff;
+  height:80px;
+  border-bottom: 1px solid          rgba(255,255,255,0.3);
+  padding:30px 0;
+  letter-spacing:.8px;
+  transition: all .2s ease-in-out;
+  transition-delay:0s;
+  border-bottom:8px solid rgb(242,242,242);
+   box-sizing:initial;
+   height:20px;
+}
+
+header #nav-d-photo{
+   
+   /*border-bottom:8px solid #bbb;
+   box-sizing:initial;
+   height:20px;*/
+  
+}
+
+header a:hover{
+  display:block;
+  font-weight:700;
+
+  background-color:#eee;
+  color:black;
+  border-bottom:8px solid #bbb;
+}
+
+header a:click{
+  background-color:#eee;
+  color:black;
+  font-weight:700;
+}
+
+
+.container{
+  display:block;
+  border:0px solid red;
+  /*max-width:1024px;*/
+  margin:0 auto;
+  background-color:rgb(242,242,242);
+  width:100%
+}
+
+.contents{
+  border:0px solid red;
+  bakcground-color:rgb(242,242,242);
+  max-width:1024px;
+  margin:60px auto;
+  
+}
+
+.card {
+  display:block;
+  background-color:white;
+  margin:15px auto;
+  width:300px;
+  border:1px solid #eee;
+  box-sizing:border-box;
+  margin:
+  
+  
+}
+
+.card img{
+  display:block;
+  border:0.5px solid #222; 
+  box-sizing:border-box;
+  width:100%;
+  
+}
+
+.card .img-1-text{
+  margin:12px 10px 20px 10px;
+  
+  
+}
+
+.card h2{
+  font-weight:400;
+  font-size:1.6rem;
+}
+.card p{
+  pading:5px 0 10px 0 ;
+  margin:5px 0 10px 0;
+  letter-spacing:0.5px;
+  font-size:1.3rem;
+  font-weight:200;
+  
+}
+
+
+
+/* -----------Footer----------------------*/
+.footer{
+   background-color:#333;
+   height:160px;
+   clear:both;
+}
+.footer h5{
+  position:relative;
+  top:15%;
+  padding-right:30px;
+  padding-left:30px;
+  font-size:10px;
+  font-weight:100;
+  text-align:center;
+ line-height:2em;
+  color:#ddd;
+  letter-spacing:1px;
+ 
+}
+
+
+@media (min-width : 400px) {
+  
+  .footer .address{
+    font-weight:400;
+    font-size:12px;
+    letter-spacing:0.8px;
+    color:#eee;
+  }
+  .footer h5{
+    position:relative;
+    top:20%;
+  }
+}
+
+@media (min-width : 320px) {
+  .card{
+    width:100%;
+    margin:
+  }
+  .card .img-1-text{
+    margin:5% 5% 7% 5%;
+  }
+  .card h2{
+    margin-bottom:3%;
+  }
+}
+
+@media (min-width : 600px) {
+  
+  .nav-top a {
+     border:1px solid red;
+     float: left;
+     width: 20%;
+     font-size: 1em;
+     border: none; /* override */
+   }
+  
+  .card{
+    float:left;
+    width:46%;
+    margin:4% 2%;
+  }
+
+  
+  
+  
+  
+  .footer h5{
+    position:relative;
+    top:50px;
+   }
+  
+
+ 
+}
+
+@media(min-width:768px) {
+      .card{
+    float:left;
+    width:30%;
+    margin:1%;
+  }
+}
+@media (min-width : 900px) {
+  
+  header .nav-top{
+    width:900px;
+    margin:0 auto;
+  }
+  
+  header .nav-bar{
+    width:100%;
+    background:#333; 
+  }
+  
+  .nav-top a {
+     border:1px solid red;
+     float: left;
+     width: 180px;
+     font-size: 1em;
+     border: none; /* override */
+   }
+  
+
+
+}
