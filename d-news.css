@@ -1,4 +1,3 @@
-
 html, body, h1, h2, h3, p, ul, li {
   margin:0;
   padding:0;
@@ -10,6 +9,9 @@ html, body, h1, h2, h3, p, ul, li {
 
 }
 
+body{
+  background-color:rgb(242,242,242);
+}
 html{font-size:10px; }
 header .logo{font-size:2.4rem;}
 header .nav-top{font-size:1.8rem}
@@ -64,21 +66,28 @@ header .nav-top a{
   letter-spacing:.8px;
   transition: all .2s ease-in-out;
   transition-delay:0s;
-  /*
-  border-bottom:8px solid rgb(255,255,255);*/
+   /*
+  border-bottom:8px solid rgb(242,242,242);*/
    box-sizing:initial;
    height:20px;
 }
 
 header #nav-d-photo{
    
-   /**/
+   /*border-bottom:8px solid #bbb;
+   box-sizing:initial;
+   height:20px;*/
+  
+}
+
+header #nav-d-news{
+   background-color:#eee;
+   color:black;
+   font-weight:700;
    border-bottom:8px solid #bbb;
    box-sizing:initial;
    height:20px;
-   background-color: #eee;
-   color:black;
-   font-weight: 700; 
+  
 }
 
 header a:hover{
@@ -101,7 +110,7 @@ header a:click{
   display:block;
   border:0px solid red;
   /*max-width:1024px;*/
-  margin:0 auto;
+  margin:20px auto;
   background-color:rgb(242,242,242);
   width:100%
 }
@@ -114,48 +123,70 @@ header a:click{
   
 }
 
-.card {
+.news{
+  border:0px solid red; 
+  margin:40px auto;
+  background-color:#fff;
+  margin:8px;
+  padding-bottom:10px;
+  overflow:hidden;
+}
+
+
+.news .dn-title{
   display:block;
-  background-color:white;
-  margin:15px auto;
-  width:300px;
-  border:1px solid #eee;
-  box-sizing:border-box;
-  margin:
+  
+}
+.news .dn-title h2{
+  font-size: 2.0rem;
+  font-weight:500;
+}
+
+.news .dn-title{
+  padding-top:20px;
+  padding-bottom:10px;
+  margin-left:20px;
+  margin-right:20px;
+  
   
   
 }
 
-.card img{
+.news .dn-img img{
   display:block;
-  border:0.5px solid #222; 
-  box-sizing:border-box;
   width:100%;
+}
+
+.news .dn-img{
+  display:block;
+  border:0px solid red;
   
 }
 
-.card .img-1-text{
-  margin:12px 10px 20px 10px;
-  
-  
-}
-
-.card h2{
-  font-weight:400;
+.news .dn-p p{
+   letter-spacing:0.6px;
   font-size:1.6rem;
+  font-weight:300;
+  line-height:1.4;
+  
 }
-.card p{
-  pading:5px 0 10px 0 ;
-  margin:5px 0 10px 0;
-  letter-spacing:0.5px;
+.news .dn-p p .sub{
+  font-weight:400;  
   font-size:1.3rem;
-  font-weight:200;
+  font-style:italic;
+}
+
+.news .dn-p{
+  border:0px solid red;
+  padding:0 20px 10px 20px;
+  
   
 }
 
 
 
-/* -----------Footer----------------------*/
+
+
 .footer{
    background-color:#333;
    height:160px;
@@ -233,14 +264,26 @@ header a:click{
 }
 
 @media(min-width:768px) {
-
-}
-@media (min-width : 900px) {
-        .card{
-    float:left;
+  .news .dn-img{
     width:30%;
-    margin:1%;
+    float:left;
+    margin-left:20px;
+    margin-right:20px;
   }
+  .news .dn-p{
+   margin-left:33%;
+    width:68%;
+  }
+  .news{
+    margin:15px;
+  }
+  
+  .news .dn-title{
+    margin-bottom:10px;
+    border-bottom:1px dotted #ddd;
+  }
+  
+@media (min-width : 900px) {
   
   header .nav-top{
     width:900px;
@@ -259,6 +302,14 @@ header a:click{
      font-size: 1em;
      border: none; /* override */
    }
+  
+  .news{
+    width:870px;
+    margin:15px auto;
+  }
+  .container {
+    margin:0 auto;
+  }
   
 
 

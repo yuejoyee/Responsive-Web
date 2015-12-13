@@ -1,4 +1,3 @@
-
 html, body, h1, h2, h3, p, ul, li {
   margin:0;
   padding:0;
@@ -10,6 +9,9 @@ html, body, h1, h2, h3, p, ul, li {
 
 }
 
+body{
+  background-color:rgb(242,242,242);
+}
 html{font-size:10px; }
 header .logo{font-size:2.4rem;}
 header .nav-top{font-size:1.8rem}
@@ -64,21 +66,27 @@ header .nav-top a{
   letter-spacing:.8px;
   transition: all .2s ease-in-out;
   transition-delay:0s;
-  /*
-  border-bottom:8px solid rgb(255,255,255);*/
+  border-bottom:8px solid rgb(242,242,242);
    box-sizing:initial;
    height:20px;
 }
 
 header #nav-d-photo{
    
-   /**/
+   /*border-bottom:8px solid #bbb;
+   box-sizing:initial;
+   height:20px;*/
+  
+}
+
+header #nav-bloggers{
+   background-color:#eee;
+   color:black;
+   font-weight:700;
    border-bottom:8px solid #bbb;
    box-sizing:initial;
    height:20px;
-   background-color: #eee;
-   color:black;
-   font-weight: 700; 
+  
 }
 
 header a:hover{
@@ -101,7 +109,7 @@ header a:click{
   display:block;
   border:0px solid red;
   /*max-width:1024px;*/
-  margin:0 auto;
+  margin:20px auto;
   background-color:rgb(242,242,242);
   width:100%
 }
@@ -114,48 +122,160 @@ header a:click{
   
 }
 
-.card {
-  display:block;
-  background-color:white;
-  margin:15px auto;
-  width:300px;
-  border:1px solid #eee;
-  box-sizing:border-box;
-  margin:
-  
-  
+
+.blogger{
+  border:0px solid red;
+  margin:20px 10px 20px 10px;
+  overflow:hidden;
 }
 
-.card img{
-  display:block;
-  border:0.5px solid #222; 
-  box-sizing:border-box;
+.blogger .img{
+ 
+  
+  /*margin-left:10px;*/
+  width:140px;
+  height:140px;
+  padding:10px;
+  background-color:#fff;
+  float:left;
+ 
+}
+
+.blogger .img img{
+  border:0px solid red;
   width:100%;
   
 }
 
-.card .img-1-text{
-  margin:12px 10px 20px 10px;
-  
-  
+.blogger .name{
+   border:0px solid red;
+   height:140px;
+   margin-left:150px;
 }
 
-.card h2{
-  font-weight:400;
+
+.blogger .name h2{
+  border:0px solid red;
+  font-size: 2.0rem;
+  font-weight:500;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:20px;
+  
+ 
+  color:#fff;
+ letter-spacing:1px;  
+}
+
+
+.blogger .text{
+   border:0px solid red;
+  background-color:#fff;
+  margin-top:10px;
+  overflow:hidden;
+
+}
+.blogger .text p{
+    letter-spacing:0.6px;
   font-size:1.6rem;
+  font-weight:300;
+  line-height:1.4;
+    padding:15px 20px;
 }
-.card p{
-  pading:5px 0 10px 0 ;
-  margin:5px 0 10px 0;
-  letter-spacing:0.5px;
-  font-size:1.3rem;
-  font-weight:200;
+
+.blogger .text h3 {
+  padding:20px;
+  border:0px solid red;
+  letter-spacing:1px;
+  font-size:1.6rem;
+  font-weight:500;
+  color:black;
+  margin-bottom:10px;
+  
+}
+.blogger .text a{
+  color:black;
+}
+
+#mc-img {
+  border-top:1px solid #79D8d0;
+  
+}
+
+#mc-text {
+  border-bottom:1px solid #79D8d0;
+  
+}
+
+#mc-name h2{
+
+  background-color:#79D8d0 /*#F06A5F*/;
+}
+
+#jb-img {
+  border-top:1px solid #6692f9;
+  
+}
+
+#jb-text {
+  border-bottom:1px solid #6692f9;
+  
+}
+
+#jb-name h2{
+
+   background-color:#6692f9 /*#F06A5F*/;
+}
+
+
+#gl-img {
+  border-top:1px solid #F06A5F;
+  
+}
+
+#gl-text {
+  border-bottom:1px solid #F06A5F;
+  
+}
+
+#gl-name h2{
+
+   background-color:#F06A5F /*#F06A5F*/;
+}
+
+
+
+#mc-text a:hover{
+  display:block;
+  font-weight:600;
+
+  
+  color:#79D8d0;
+ 
+}
+
+#jb-text a:hover{
+  display:block;
+  font-weight:600;
+
+  
+  color:#6692F9;
+ 
+}
+
+#jb-text a:click{
+ 
+  color:black;
+  font-weight:700;
+}
+
+#jb-text a:visited{
+  color:black;
   
 }
 
 
 
-/* -----------Footer----------------------*/
 .footer{
    background-color:#333;
    height:160px;
@@ -191,16 +311,8 @@ header a:click{
 }
 
 @media (min-width : 320px) {
-  .card{
-    width:100%;
-    margin:
-  }
-  .card .img-1-text{
-    margin:5% 5% 7% 5%;
-  }
-  .card h2{
-    margin-bottom:3%;
-  }
+
+
 }
 
 @media (min-width : 600px) {
@@ -213,11 +325,15 @@ header a:click{
      border: none; /* override */
    }
   
-  .card{
-    float:left;
-    width:46%;
-    margin:4% 2%;
+    .blogger .name{
+      height:100%; 
+    
   }
+  .blogger .text{
+    margin-left:150px;
+    
+  }
+  
 
   
   
@@ -233,14 +349,18 @@ header a:click{
 }
 
 @media(min-width:768px) {
-
-}
-@media (min-width : 900px) {
-        .card{
-    float:left;
-    width:30%;
-    margin:1%;
+  .blogger{
+    width:768px;
+    margin:20px auto;
   }
+  .container {
+    margin:0 auto;
+  }
+  
+  
+  }
+  
+@media (min-width : 900px) {
   
   header .nav-top{
     width:900px;
@@ -260,6 +380,7 @@ header a:click{
      border: none; /* override */
    }
   
+
 
 
 }
